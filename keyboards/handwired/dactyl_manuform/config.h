@@ -24,22 +24,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x3060
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    tshort
+#define MANUFACTURER    pewdawan
 // defined in subfolder
 #define DESCRIPTION     A split keyboard for the cheap makers
 
 /* mouse config */
-#define MOUSEKEY_INTERVAL       20
-#define MOUSEKEY_DELAY          0
-#define MOUSEKEY_TIME_TO_MAX    60
-#define MOUSEKEY_MAX_SPEED      7
-#define MOUSEKEY_WHEEL_DELAY 0
+//#define MOUSEKEY_INTERVAL       20
+//#define MOUSEKEY_DELAY          0
+//#define MOUSEKEY_TIME_TO_MAX    60
+//#define MOUSEKEY_MAX_SPEED      7
+//#define MOUSEKEY_WHEEL_DELAY 0
 
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
 /* serial.c configuration for split keyboard */
-#define SOFT_SERIAL_PIN D0
+#define SOFT_SERIAL_PIN D2
+//#define SELECT_SOFT_SERIAL_SPEED 2
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
@@ -48,6 +49,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Enables This makes it easier for fast typists to use dual-function keys */
 #define PERMISSIVE_HOLD
+
+
+/*
+#define BACKLIGHT_LEVELS 3
+#define LED_DRIVER_ADDR_1 0b1110100
+#define LED_DRIVER_COUNT 1
+#define LED_DRIVER_1_LED_COUNT 64
+#define LED_DRIVER_LED_COUNT 64
+#define LED_DRIVER_1_LED_COUNT 64
+#define DRIVER_LED_TOTAL 64
+#define DRIVER_1_LED_TOTAL 64
+ */
 
 /*
  * Feature disable options

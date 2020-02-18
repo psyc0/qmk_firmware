@@ -30,16 +30,93 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // wiring of each half
 #define MATRIX_COL_PINS { D4, C6, D7, E6, B4, B5 }
-#define MATRIX_ROW_PINS { F6, F7, B1, B3, B2, B6 }
+#define MATRIX_ROW_PINS { F7, F6, F5, F4, F1, F0 }
 
 #define DIODE_DIRECTION COL2ROW
 
 // WS2812 RGB LED strip input and number of LEDs
-#define RGB_DI_PIN D3
-#define RGBLED_NUM 12
+//#define RGB_DI_PIN D3
+//#define RGBLED_NUM 12
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
 
 /* number of backlight levels */
-// #define BACKLIGHT_LEVELS 3
+
+#define BACKLIGHT_LEVELS 3
+#define LED_DRIVER_ADDR_1 0b1110100
+#define LED_DRIVER_COUNT 1
+#define LED_DRIVER_1_LED_COUNT 64
+#define LED_DRIVER_1_LED_COUNT 64
+#define DRIVER_LED_TOTAL 64
+#define DRIVER_1_LED_TOTAL 64
+#define LED_DRIVER_LED_COUNT 64
+
+#include "is31fl3731-simple.h"
+
+const is31_led g_is31_leds[DRIVER_LED_TOTAL] = {
+{0, C1_1},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+{0, C3_3},
+{0, C3_4},
+};
