@@ -20,7 +20,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
-
 #define PRODUCT         Dactyl-Manuform (5x6)
 
 /* key matrix size */
@@ -52,71 +51,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DRIVER_1_LED_TOTAL 64
 #define LED_DRIVER_LED_COUNT 64
 
+#ifndef __ASSEMBLER__
 #include "is31fl3731-simple.h"
+#endif
 
-const is31_led g_is31_leds[DRIVER_LED_TOTAL] = {
-{0, C1_1},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-{0, C3_3},
-{0, C3_4},
-};
